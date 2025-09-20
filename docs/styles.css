@@ -1,4 +1,3 @@
-
 /* Reset */
 * {
   margin: 0;
@@ -10,20 +9,11 @@ body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   color: #333;
-  padding-bottom: 70px; /* espacio para barra inferior */
+  padding-bottom: 70px;
 }
-/* Botón Nosotros */
-.btn-nosotros {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
 
 /* ------------------------------
-   BARRA SUPERIOR
+   NAVBAR
 -------------------------------*/
 .navbar {
   background-color: #000;
@@ -39,7 +29,6 @@ body {
   align-items: center;
 }
 
-/* Menú izquierdo y derecho */
 .nav-left, .nav-right {
   display: flex;
   list-style: none;
@@ -50,8 +39,7 @@ body {
   margin: 0 15px;
 }
 
-.nav-left li a, 
-.nav-right li a {
+.nav-left li a, .nav-right li a {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
@@ -59,8 +47,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-left li a:hover,
-.nav-right li a:hover {
+.nav-left li a:hover, .nav-right li a:hover {
   color: #ff3b30;
 }
 
@@ -69,11 +56,6 @@ body {
   padding: 8px 20px;
   border-radius: 10px;
   font-weight: bold;
-}
-
-/* Logo centrado */
-.logo {
-  text-align: center;
 }
 
 .logo img {
@@ -85,139 +67,25 @@ body {
 .logo .slogan {
   color: #fff;
   font-size: 12px;
-  display: block;
   margin-top: 3px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  display: block;
 }
 
-/* Íconos */
-
-/*whatsapp*/
-nav ul li a i.fa-whatsapp {
-    font-size: 28px;
-  color: #25D366; /* Verde oficial de WhatsApp */
+/* Íconos sociales */
+nav ul li a i {
+  font-size: 28px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a i.fa-whatsapp:hover {
-  transform: scale(1.2);
-  color: #1ebe5b; /* Verde un poco más oscuro al pasar el mouse */
-}
-/*instagram*/
-nav ul li a i.fa-instagram {
-  font-size: 28px;              /* tamaño del icono */
-  background: radial-gradient(circle at 30% 107%, 
-              #fdf497 0%, #fdf497 5%, 
-              #fd5949 45%, #d6249f 60%, #285AEB 90%);
+.fa-whatsapp { color: #25D366; }
+.fa-instagram { 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* hace el degradado */
-  transition: transform 0.3s ease;
+  -webkit-text-fill-color: transparent;
 }
-
-nav ul li a i.fa-instagram:hover {
-  transform: scale(1.3) rotate(5deg); /* animación al pasar */
-}
-/*Facebook*/
-nav ul li a i.fa-facebook-f {
-  font-size: 28px;               /* tamaño del icono */
-  color: #1877F2;                /* azul oficial de Facebook */
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a i.fa-facebook-f:hover {
-  transform: scale(1.3) rotate(-5deg); /* efecto al pasar */
-  color: #0d65d9;                       /* azul más oscuro en hover */
-}
-/*icono general */
-.nav-right i {
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-right i:hover {
-  color: #ff3b30;
-}
-
-/* ------------------------------
-   CONTENIDO
--------------------------------*/
-.contenido {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-/* ------------------------------
-   BARRA INFERIOR (APARECE AL FINAL)
--------------------------------*/
-.footer {
-  background: #000;
-  color: #fff;
-  padding: 30px 20px 10px;
-  position: relative;   /* 🔹 Ya no está fija */
-  bottom: 0;
-  width: 100%;
-  border-top: 2px solid #ff0000; /* Línea elegante */
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-section {
-  flex: 1;
-  margin: 10px;
-}
-
-.footer-section h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #ff0000;
-}
-
-.footer-section p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* Íconos de pago */
-.payment-icons {
-  font-size: 26px;
-}
-
-.payment-icons i {
-  margin-right: 15px;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  color: #ccc;
-}
-
-.payment-icons i:hover {
-  transform: scale(1.3);
-  color: #ff0000;
-}
-
-/* Logo */
-.logo-section img {
-  width: 160px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.logo-section img:hover {
-  transform: scale(1.1);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 12px;
-  color: #888;
-}
-
+.fa-facebook-f { color: #1877F2; }
 
 /* ------------------------------
    SALUDO
@@ -231,12 +99,10 @@ nav ul li a i.fa-facebook-f:hover {
 .saludo h1 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #222;
 }
 
 .saludo p {
   font-size: 1.1rem;
-  color: #555;
 }
 
 /* ------------------------------
@@ -264,11 +130,11 @@ nav ul li a i.fa-facebook-f:hover {
 .carrusel-track {
   display: flex;
   gap: 20px;
-  animation: slide 13s infinite linear;
+  animation: slide-desktop 13s infinite linear;
 }
 
 .producto {
-  flex: 0 0 calc(33.333% - 20px);
+  flex: 0 0 calc(33.333% - 20px); /* 3 productos en PC */
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -289,98 +155,121 @@ nav ul li a i.fa-facebook-f:hover {
   transform: scale(1.05);
 }
 
-.producto h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: #111;
+/* Animaciones */
+@keyframes slide-desktop {
+  0%, 30%   { transform: translateX(0); }
+  35%, 65%  { transform: translateX(-100%); }
+  70%, 95%  { transform: translateX(-200%); }
+  100%      { transform: translateX(0); }
 }
 
-.producto p {
-  font-size: 0.95rem;
-  color: #555;
+@keyframes slide-tablet {
+  0%, 40%   { transform: translateX(0); }
+  45%, 85%  { transform: translateX(-100%); }
+  100%      { transform: translateX(0); }
 }
 
-
-/* Animación del carrusel */
-@keyframes slide {
-  0%   { transform: translateX(0); }
-  30%  { transform: translateX(0); }
-  35%  { transform: translateX(-100%); }
-  65%  { transform: translateX(-100%); }
-  70%  { transform: translateX(-200%); }
-  95%  { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
+@keyframes slide-mobile {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-100%); }
+  50%, 70%  { transform: translateX(-200%); }
+  75%, 95%  { transform: translateX(-300%); }
+  100%      { transform: translateX(0); }
 }
 
 /* ------------------------------
-   RESPONSIVE DESIGN
+   FOOTER
 -------------------------------*/
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 30px 20px 10px;
+  border-top: 2px solid #ff0000;
+}
 
-/* Tablets (pantallas medianas) */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.payment-icons i {
+  margin-right: 15px;
+  font-size: 26px;
+  color: #ccc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.payment-icons i:hover {
+  transform: scale(1.3);
+  color: #ff0000;
+}
+
+.logo-section img {
+  width: 160px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* ------------------------------
+   RESPONSIVE
+-------------------------------*/
 @media (max-width: 992px) {
-  /* Navbar */
-  .nav-left li, .nav-right li {
-    margin: 0 8px;
-  }
-
-  .logo img {
-    height: 80px;
-  }
-
-  /* Carrusel: 2 productos */
   .producto {
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px); /* 2 productos */
+  }
+  .carrusel-track {
+    animation: slide-tablet 10s infinite linear;
   }
 }
 
-/* Móviles (pantallas pequeñas) */
 @media (max-width: 600px) {
-  /* Navbar */
-  .navbar {
-    padding: 10px 15px;
+  .producto {
+    flex: 0 0 100%; /* 1 producto */
+  }
+  .carrusel-track {
+    animation: slide-mobile 12s infinite linear;
   }
 
+  .navbar {
+    padding: 10px;
+  }
   nav {
     flex-direction: column;
+    align-items: center;
   }
-
   .nav-left, .nav-right {
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
-
   .nav-left li, .nav-right li {
-    margin: 5px 10px;
+    margin: 5px 8px;
   }
 
-  .logo img {
-    height: 60px;
-    margin: 10px 0;
-  }
-
-  /* Texto saludo */
-  .saludo h1 {
-    font-size: 1.5rem;
-  }
-  .saludo p {
-    font-size: 0.95rem;
-  }
-
-  /* Carrusel: 1 producto */
-  .producto {
-    flex: 0 0 100%;
-  }
-
-  /* Footer apilado */
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
-
   .footer-section {
     margin: 15px 0;
   }
-
   .logo-section img {
     width: 120px;
   }
